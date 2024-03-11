@@ -12,6 +12,7 @@ body {
    border:0;
    height: 173px;
    
+   
 }
 
 #logo-img {
@@ -55,6 +56,17 @@ body {
 }
 .navbar-brand p img{
    vertical-align: middle;
+}
+
+#menu-lg  {
+    position:relative;
+    top: -50px;
+    right: -480px;
+}
+#menu-lg a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 10px;
 }
 /*
 .navbar-toggle {
@@ -161,6 +173,8 @@ span {
     #principal {
         visibility: hidden;
 }
+
+
 }
 @media (max-width: 600px) {
     #header-nav {
@@ -191,7 +205,11 @@ span {
         position: fixed;
         bottom: right;
      }
-    
+     #menu-lg {
+        visibility: hidden;
+    }
+   
+}
     @media screen and (max-height: 600px) {
       .menuOculto {
         padding: 15px;
@@ -199,4 +217,9 @@ span {
         .menuOculto a {
             font-size: 18px;
         }
+        
+        
     }
+
+   
+    
