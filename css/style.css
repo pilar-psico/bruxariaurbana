@@ -98,6 +98,7 @@ body {
     font-size: 20px;
     display: block;
     transition: 0.3s;
+    
 }
 .menuOculto a:hover {
     color:  #263380;
