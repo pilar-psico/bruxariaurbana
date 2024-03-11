@@ -1,6 +1,6 @@
 function abrirNav(){
-    document.getElementById("menuOculto").style.width="180px";
-    document.getElementById("principal").style.marginRight="180px";
+    document.getElementById("menuOculto").style.width="200px";
+    document.getElementById("principal").style.marginRight="200px";
 }
 function fecharNav(){
     document.getElementById("menuOculto").style.width="0";
