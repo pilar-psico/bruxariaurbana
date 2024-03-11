@@ -1,18 +1,28 @@
+:root {
+    --bg-header:#33cabe;
+    --bg-color: rgb(143, 143, 236);
+    --bg-header-h1:  #263380;
+    --bg-menuOculto:  #41e9b7;
+}
 
+.light {
+   --bg-header:  #5bac92f1;
+   --bg-color:  rgba(20, 20, 80, 0.925);
+   --bg-header-h1: #fff;
+   --bg-menuOculto:  #6990c2;
+}
 body {
     font-size: 16px;
     color: #fff;
-    background-color: rgb(143, 143, 236);
+    background-color: var(--bg-color);
     font-family: 'Oxygen', sans-serif;
 }
 
 #header-nav {
-   background-color: #33cabe;
+   background-color:var(--bg-header);
    border-radius: 0;
    border:0;
    height: 173px;
-   
-   
 }
 
 #logo-img {
@@ -33,7 +43,7 @@ body {
 }
 .navbar-brand h1 {
     font-family: "Lora", serif;
-    color: #263380;
+    color: var(--bg-header-h1);
     font-size: 2.0em;
     text-transform: uppercase;
     font-weight: bold;
@@ -79,7 +89,7 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    background-color:  #41e9b7;
+    background-color: var(--bg-menuOculto);
   
 }
 .menuOculto a {
@@ -103,10 +113,48 @@ body {
     padding: 16px;
     transition: margin-right 0.5s;
 }
-span {
+icon {
     position: absolute;
     right: 30px;
     top: 40px;
+}
+
+#Switch {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+    position: relative; 
+    right: 30px;
+}
+#Switch button {
+    width: 30px;
+    height: 30px;
+    background: rgb(24, 27, 167);
+    border: 0;
+    border-radius: 50%;
+    position:absolute;
+    z-index: 1;
+    left:0;
+    
+    transform: translateY(-50%)
+    top: 50%;
+}
+#Switch span {
+    width: 60px;
+    height: 24px;
+    background: ;
+    border:1px solid blue;
+    backdrop-filter: blue(0.4px);
+    -webkit-backdrop-filter: blur(0.4px);
+    border-radius: 9999px;
+}
+.light #Switch button {
+    right: 0;
+    left: initial;
 }
 
 
@@ -134,13 +182,16 @@ span {
     #principal {
         visibility: hidden;
 }
-
+    #Switch {
+        margin-right:-300px;
+        margin-top: -40px;
+    }
 
 }
 @media (max-width: 600px) {
     #header-nav {
         width: 100%;
-        height: 130px;
+        height: 160px;
     }
     #header-nav h1 {
         font-size: 23px;
@@ -169,6 +220,12 @@ span {
      #menu-lg  {
       display: none;
     }
+    #Switch {
+        
+    position: relative;
+    top: 40px;
+    left: -230px;
+}
    
 }
 
