@@ -60,8 +60,8 @@ body {
 
 #menu-lg  {
     position:relative;
-    top: -50px;
-    right: -480px;
+    top: -80px;
+    right: -410px;
 }
 #menu-lg a {
     font-size: 18px;
@@ -71,11 +71,11 @@ body {
 
 .menuOculto {
     height: 70%;
-    width: 0px;
+    width: 0;
     position: fixed;
     z-index: 1;
     top:0;
-    right:0;
+    right:-30px;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -171,6 +171,7 @@ span {
     }
    
 }
+
     @media screen and (max-height: 600px) {
       .menuOculto {
         padding: 15px;
