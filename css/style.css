@@ -197,13 +197,31 @@ article p {
 }
 
 .col-2-6 {
-    font-family: 'Inter';
-    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     font-size: 20px;
     text-align: justify;
     padding: 10px 30px;
     margin-top: 10px;
 }
+.col-2-6 {
+    position: relative;
+    margin-top: -135px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 30px;
+}   
+.pentagrama {
+    background: url(../img/wicca.png) no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin:0 auto;
+    border-radius: 8px; /*por minha conta*/
+   }
+
 main {
     clear:left;
     margin-left: 30px;
@@ -213,13 +231,13 @@ main {
     margin:0 auto;
     
 }
-.circulo  {
-    width: 100%;
-}
+
+
 h2 {
    text-align: center;
    font-size: 30px;
 }
+
 
 
 
@@ -241,6 +259,9 @@ h2 {
     #Switch {
         margin-right:-300px;
         margin-top: -40px;
+    }
+    .pentagrama {
+        visibility: hidden;
     }
 
 }
@@ -298,6 +319,7 @@ h2 {
     height: 150px;
     margin:0 auto;
     border-radius: 8px; /*por minha conta*/
+    margin-top: 140px;
    }
 }
 
