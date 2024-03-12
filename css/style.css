@@ -279,6 +279,14 @@ h2 {
    .col-2-6 {
     width: 100%;
    }
+   .pentagrama {
+    background: url(../img/wicca.png) no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin:0 auto;
+    border-radius: 8px; /*por minha conta*/
+   }
 }
 
     @media screen and (max-height: 600px) {
