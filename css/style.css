@@ -4,14 +4,18 @@
     --bg-header-h1:  #263380;
     --bg-menuOculto:  #41e9b7;
     --color-text-article:#000;
+    --color-switch:rgb(60, 62, 184);
+    --color-h2:rgb(3, 49, 51);
 }
 
 .light {
-   --bg-header:  #5bac92f1;
-   --bg-color:  rgba(20, 20, 80, 0.925);
-   --bg-header-h1: #fff;
+   --bg-header:  #1a4435f1;
+   --bg-color:  rgba(4, 4, 20, 0.925);
+   --bg-header-h1: #57569c;
    --bg-menuOculto:  #6990c2;
    --color-text-article: white;
+   --color-switch: rgb(90, 90, 187);
+   --color-h2:darkturquoise;
 }
 * {
     margin: 0;
@@ -142,14 +146,14 @@ icon {
 #Switch button {
     width: 30px;
     height: 30px;
-    background: rgb(60, 62, 184);
+    background: var(--color-switch);
     border: 0;
     border-radius: 50%;
     position:absolute;
     z-index: 1;
     left:0;
     
-    transform: translateY(-50%)
+    transform: translateY(-50%);
     top: 50%;
 }
 #Switch span {
@@ -236,6 +240,7 @@ main {
 h2 {
    text-align: center;
    font-size: 30px;
+   color: var(--color-h2);
 }
 
 
