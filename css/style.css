@@ -7,6 +7,7 @@
     --color-switch:rgb(60, 62, 184);
     --color-h2:rgb(3, 49, 51);
     --color-a-link: #263380;
+    --text-color:black;
 }
 
 .light {
@@ -18,6 +19,7 @@
    --color-switch: rgb(90, 90, 187);
    --color-h2:darkturquoise;
    --color-a-link: #8d98d6;
+   --text-color: rgb(13, 185, 128);
 }
 * {
     margin: 0;
@@ -176,10 +178,11 @@ a {
     text-decoration: none;
 }
 .home {
+    font-weight: 800;
    font-size: 18px;
    text-align: right;
+   color:darkgreen
    
-  
 
 }
 article {
@@ -195,7 +198,7 @@ article p {
 }
 .col-1-6 {
     font-family: 'Inter';
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
     text-align: justify;
     padding: 10px 30px;
@@ -227,7 +230,16 @@ article p {
     margin:0 auto;
     border-radius: 8px; /*por minha conta*/
    }
-
+.italic {
+    font-style: italic;
+}
+.wght {
+    font-weight: 400;
+}
+.wghtitalic {
+    font-style: italic;
+    font-weight: 400;
+}
 main {
     clear:left;
     margin-left: 30px;
@@ -238,12 +250,21 @@ main {
     
 }
 
-
 h2 {
    text-align: center;
    font-size: 30px;
    color: var(--color-h2);
 }
+main p {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
 
 
 
