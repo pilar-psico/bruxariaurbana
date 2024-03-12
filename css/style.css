@@ -349,6 +349,9 @@ main p {
     border-radius: 8px; /*por minha conta*/
     margin-top: 140px;
    }
+   main {
+    width: 95%;
+   }
 }
 
     @media screen and (max-height: 600px) {
