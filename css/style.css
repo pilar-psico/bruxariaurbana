@@ -3,6 +3,7 @@
     --bg-color: rgb(143, 143, 236);
     --bg-header-h1:  #263380;
     --bg-menuOculto:  #41e9b7;
+    --color-text-article:#000;
 }
 
 .light {
@@ -10,6 +11,12 @@
    --bg-color:  rgba(20, 20, 80, 0.925);
    --bg-header-h1: #fff;
    --bg-menuOculto:  #6990c2;
+   --color-text-article: white;
+}
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 body {
     font-size: 16px;
@@ -134,7 +141,7 @@ icon {
 #Switch button {
     width: 30px;
     height: 30px;
-    background: rgb(24, 27, 167);
+    background: rgb(60, 62, 184);
     border: 0;
     border-radius: 50%;
     position:absolute;
@@ -148,7 +155,7 @@ icon {
     width: 60px;
     height: 24px;
     background: ;
-    border:1px solid blue;
+    border:1px solid rgb(66, 66, 126);
     backdrop-filter: blue(0.4px);
     -webkit-backdrop-filter: blur(0.4px);
     border-radius: 9999px;
@@ -157,14 +164,47 @@ icon {
     right: 0;
     left: initial;
 }
+article {
+    width: 50%;
+    border: 1px solid red;
+    float: left;
+    padding: 10px;
+    color: var(--color-text-article);
+}
 
+.col-1-6 {
+    font-family: 'Inter';
+    font-weight: 100;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
 
-
-
-
-
-
-
+.col-2-6 {
+    font-family: 'Inter';
+    font-weight: 100;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+main {
+    clear:left;
+    margin-left: 30px;
+    padding-top: 20px;
+    margin-right: 30px;
+    width: 80%;
+    margin:0 auto;
+    
+}
+.circulo  {
+    width: 100%;
+}
+h2 {
+   text-align: center;
+   font-size: 30px;
+}
 
 
 
@@ -227,7 +267,15 @@ icon {
     top: 40px;
     left: -230px;
 }
-   
+   article {
+    float:none
+   }
+   .col-1-6 {
+    width: 100%;
+   }
+   .col-2-6 {
+    width: 100%;
+   }
 }
 
     @media screen and (max-height: 600px) {
