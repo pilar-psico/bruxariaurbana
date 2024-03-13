@@ -176,6 +176,7 @@ icon {
 a {
     color:var(--color-a-link);
     text-decoration: none;
+    cursor: pointer;
 }
 .home {
     font-weight: 800;
