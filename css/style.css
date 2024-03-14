@@ -223,6 +223,18 @@ article p {
     text-align: justify;
     padding: 10px 30px;
 }   
+#cristal a {
+    color: white;
+    font-size: 30px;
+
+}
+#cristal {
+    text-align: center;
+    font-family: 'Oxygen', serif;
+    text-shadow:  1px 1px 1px #222;
+    margin-top: 30px;
+    
+}
 .pentagrama {
     background: url(../img/wicca.png) no-repeat;
     background-size: contain;
@@ -349,9 +361,13 @@ main p {
     margin:0 auto;
     border-radius: 8px; /*por minha conta*/
     margin-top: 140px;
+    margin-bottom: 20px;
    }
    main {
     width: 95%;
+   }
+   #cristal {
+    visibility: hidden;
    }
 }
 
