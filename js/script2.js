@@ -1,5 +1,7 @@
 const elementoResposta = document.querySelector("#resposta")
 
+const inputPergunta = document.querySelector("#inputPergunta")
+
 const respostas = [
     "Sim",
     "Provavelmente",
@@ -16,10 +18,19 @@ const respostas = [
 ]
 
 function fazerPergunta() {
-    
+   if(inputPergunta.value == "") {
+    alert ("Digite sua pergunta")
+    return
+   }
+    const pergunta = "<div>" + inputPergunta.value + "</div>" 
+
     const totalRespostas = respostas.length
 
     const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
-    console.log(respostas[numeroAleatorio])
+    
+    elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
   
+    setTimeout(function(){
+        elementoResposta.style.opacity = 0;
+    }, 3000)
 } 
