@@ -96,7 +96,7 @@ body {
 }
 
 .menuOculto {
-    height: 70%;
+    height: 80%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -129,6 +129,22 @@ body {
 #principal {
     padding: 16px;
     transition: margin-right 0.5s;
+}
+
+
+ section.menu2 {
+
+    width: 100%;
+    background:rgb(136, 228, 174);
+  
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ } 
+section > .nav2 > a {
+   margin-right: 1.6rem;
 }
 icon {
     position: absolute;
@@ -309,7 +325,7 @@ main p {
     .pentagrama {
         visibility: hidden;
     }
-
+   
 }
 @media (max-width: 600px) {
     #header-nav {
@@ -343,6 +359,7 @@ main p {
      #menu-lg  {
       display: none;
     }
+  
     #Switch {
         
     position: relative;
@@ -373,6 +390,9 @@ main p {
    }
    #cristal, .cristal {
     visibility: hidden;
+   }
+   section.menu2 {
+    display: none;
    }
 }
 
